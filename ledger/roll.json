@@ -1,0 +1,62 @@
+[
+  {
+    "path": "a-knife-cut-takes-no-material",
+    "kind": "decision",
+    "digest": "2fd53a2c1f8e"
+  },
+  {
+    "path": "a-knife-cut-takes-no-material/a-knifes-blade-thickness",
+    "kind": "alternative",
+    "digest": "101af7550a19"
+  },
+  {
+    "path": "a-knife-cut-takes-no-material/no-kerf",
+    "kind": "alternative",
+    "digest": "f095e37e855b"
+  },
+  {
+    "path": "a-multiwall-sheet-states-no-bending-values",
+    "kind": "decision",
+    "digest": "6d42439b3560"
+  },
+  {
+    "path": "a-multiwall-sheet-states-no-bending-values/bx-as-ei",
+    "kind": "alternative",
+    "digest": "6d999f348a22"
+  },
+  {
+    "path": "a-multiwall-sheet-states-no-bending-values/the-resins-modulus",
+    "kind": "alternative",
+    "digest": "3657affe1afd"
+  },
+  {
+    "path": "a-multiwall-sheets-density-is-its-mass-per-area-over-its-thickness",
+    "kind": "decision",
+    "digest": "7667402dc73b"
+  },
+  {
+    "path": "a-multiwall-sheets-density-is-its-mass-per-area-over-its-thickness/no-density",
+    "kind": "alternative",
+    "digest": "873b719c885d"
+  },
+  {
+    "path": "a-multiwall-sheets-density-is-its-mass-per-area-over-its-thickness/the-resins-density",
+    "kind": "alternative",
+    "digest": "48d64b67aeb7"
+  },
+  {
+    "path": "multiwall-sheets-are-one-package",
+    "kind": "decision",
+    "digest": "a34410a5bb0c"
+  },
+  {
+    "path": "multiwall-sheets-are-one-package/a-package-per-maker",
+    "kind": "alternative",
+    "digest": "b9ddc2a4ad0a"
+  },
+  {
+    "path": "multiwall-sheets-are-one-package/in-wood-panels",
+    "kind": "alternative",
+    "digest": "a27499736d94"
+  }
+]

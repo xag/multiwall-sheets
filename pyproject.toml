@@ -1,0 +1,30 @@
+[project]
+name = "multiwall-sheets"
+version = "0.1.0"
+description = "Multiwall polycarbonate sheets as data on furniture-design's kinds: the sheets' properties and how their makers say to cut and fit them. Unofficial: not written or endorsed by the makers."
+requires-python = ">=3.11"
+license = "AGPL-3.0-or-later AND CC-BY-NC-ND-4.0"
+license-files = ["LICENSE", "LICENSE-DATA"]
+dependencies = ["quern", "furniture-design"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["multiwall_sheets"]
+
+[dependency-groups]
+dev = ["pytest>=8.0.0", "pytest-testmon>=2.1"]
+
+[tool.uv.sources]
+# Pinned by full rev, always, and to the same quern as furniture-design: uv accepts one URL
+# per distribution across a resolution.
+quern = { git = "https://github.com/xag/quern", rev = "07eff6efc0625ee0613a083095db4e6b75be7284" }
+furniture-design = { git = "https://github.com/xag/furniture-design", rev = "c94c52de0adff95ddaeb1244d76b8bd4eeb3ed7c" }
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+# Fail fast: stop at the first failure, run last time's failures first.
+# First pass `pytest --testmon` (failed and changed tests), then the whole suite with `pytest`.
+addopts = "-x --ff"

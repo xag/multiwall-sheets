@@ -1,0 +1,143 @@
+{
+ "documents": [
+  {
+   "id": "polyvantis-thermoclear-manual",
+   "publisher": "F&S B.V. (Polyvantis)",
+   "title": "LEXAN THERMOCLEAR multiwall polycarbonate sheet: technical, processing and installation guide, PV_TM_001_LTC_EN_12-24",
+   "url": "https://ff-cms.com/storage/980/PV_TM_001_LTC_EN_W_12-24.pdf",
+   "fetched": "2026-11-15",
+   "sha256": "6f07d9f365c881f0909df304a8e49bdfd00dc0ec9081c4811c5df82cd7caa27f",
+   "file": "polyvantis/polyvantis-thermoclear-technical-manual-PV_TM_001.pdf",
+   "clauses": [
+    {
+     "id": "product-selector",
+     "locator": "Table 1, Product Selector, row LT2UV62RS13: structure, gauge, weight, U value, rib distance, colours, p. 10",
+     "params": {
+      "thickness": {
+       "value": 6,
+       "unit": "mm",
+       "printed": "LT2UV62RS13 2-Wall Rectangular 6 1,30 3,56 6,30 112-WH7A092X-515055"
+      },
+      "mass_per_area": {
+       "value": 1.3,
+       "unit": "kg/m2",
+       "printed": "LT2UV62RS13 2-Wall Rectangular 6 1,30 3,56 6,30 112-WH7A092X-515055"
+      },
+      "rib_pitch": {
+       "value": 6.3,
+       "unit": "mm",
+       "printed": "LT2UV62RS13 2-Wall Rectangular 6 1,30 3,56 6,30 112-WH7A092X-515055"
+      }
+     }
+    },
+    {
+     "id": "resin-properties",
+     "locator": "Table 2, typical properties of LEXAN resin: coefficient of linear thermal expansion 23-80 °C (ISO 11359-2), p. 11",
+     "params": {
+      "thermal_expansion_coefficient": {
+       "value": 7.0,
+       "unit": "1e-5/K",
+       "printed": "Coeff. of lin. Therm. Exp.extr. 23-80°C ISO 11359-2 1/°C 7,00 E-05"
+      }
+     }
+    },
+    {
+     "id": "sawing",
+     "locator": "Processing, sawing: a sharp knife on sheet up to 10 mm, the channels blown free, edges free of notches, p. 26",
+     "params": {
+      "knife_max_thickness": {
+       "value": 10,
+       "unit": "mm",
+       "printed": "(up to 10 mm), it is possible to cut the sheet with a knife"
+      }
+     },
+     "words": [
+      "important that the knife is sharp",
+      "Blow away saw dust build-up in the channels with dry compressed air",
+      "free of notches and swarf build-up"
+     ]
+    },
+    {
+     "id": "thermal-expansion",
+     "locator": "Thermal expansion: free expansion in length and width, the edge engaged in the frame, p. 27",
+     "params": {
+      "expansion_allowance": {
+       "value": 3,
+       "unit": "mm/m",
+       "printed": "3 mm per linear metre at a delta of 50°C"
+      }
+     }
+    },
+    {
+     "id": "edge-sealing",
+     "locator": "Edge sealing: edges smooth and rounded before taping, p. 31",
+     "params": {},
+     "words": [
+      "smooth and rounded"
+     ]
+    },
+    {
+     "id": "dos",
+     "locator": "Do's: ribs running vertically, p. 42",
+     "params": {},
+     "words": [
+      "ribs running vertically"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "exolon-faq-multiwall",
+   "publisher": "Exolon Group",
+   "title": "FAQ multiwall sheets (web page)",
+   "url": "https://www.exolongroup.com/en/1032/FAQ-Multiwall-sheets.htm",
+   "fetched": "2026-11-15",
+   "sha256": "9262d038748c73bd0a79a623b8afc12dfa54159de6a48b57953879223c78e73f",
+   "file": "exolon-faq-multiwall-sheets.html",
+   "clauses": [
+    {
+     "id": "cutting",
+     "locator": "How do I cut multiwall sheets: marking on the film against a rail, a cutter knife for thin sheets, scoring several times, breaking along the line",
+     "params": {},
+     "words": [
+      "protective film with a pencil or waterproof pen and a rail or ruler",
+      "For thin sheets you can use a cutter knife",
+      "score the cutting line several times",
+      "Be careful not to score too deeply",
+      "Carefully break the sheet along the inscribed line"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "exolon-multi-uv-manual",
+   "publisher": "Exolon Group",
+   "title": "Exolon multi UV technical manual, mf0340_e_240807",
+   "url": "https://www.exolongroup.com/index.php/fuseaction/download/lrn_file/mf0340_e_240807.pdf",
+   "fetched": "2026-11-15",
+   "sha256": "2adb5a51a961dc3dd3138e9cc2bb299cc0e1dc9668c6be964d0578a38cb2c8a6",
+   "file": "exolon-multi-UV-technical-manual-mf0340_e_240807.pdf",
+   "clauses": [
+    {
+     "id": "cutting",
+     "locator": "Machining, cutting: a sharp knife, short rigid blades, guidance, swarf removed, p. 56",
+     "params": {},
+     "words": [
+      "most easily cut with a sharp knife",
+      "knife, use blades that are short and rigid",
+      "Always use guidance when cutting",
+      "remove swarf by vacuum or blowing down with oil-free"
+     ]
+    },
+    {
+     "id": "ribs",
+     "locator": "Cutting along the ribs: as close as possible to a rib, p. 49",
+     "params": {},
+     "words": [
+      "Try to cut close to the ribs"
+     ]
+    }
+   ]
+  }
+ ]
+}
