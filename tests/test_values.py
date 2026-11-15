@@ -103,7 +103,7 @@ def test_every_link_lands_on_a_clause_and_every_source_says_its_authority():
     clauses = {f"sources/{s.id}/{c.id}" for s in knowledge()[0].children for c in s.children}
     for s in knowledge()[0].children:
         assert s.payload["authority"] == "maker", s.id
-    for b in knowledge()[1:]:
+    for b in (b for b in knowledge()[1:] if b.id != "guidance"):
         for n in b.children:
             for p in n.links["per"]:
                 assert p in clauses, (n.id, p)

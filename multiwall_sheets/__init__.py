@@ -145,8 +145,27 @@ def knife() -> Node:
 AUTHORITY = {d: "maker" for d in ("polyvantis-thermoclear-manual", "exolon-faq-multiwall", "exolon-multi-uv-manual")}
 
 
+def _say(id_: str, name: str, text: str, *about: str) -> Node:
+    return Node(id=id_, kind="guidance", name=name, payload={"text": " ".join(text.split())},
+                links={"about": list(about)} if about else {})
+
+
+def guidance() -> Node:
+    """What whoever designs with this package is told before reading its nodes (furniture-design's kind
+    guidance): a reader gives it to its assistant and writes none of its own."""
+    return Node(id="guidance", kind="", children=[
+        _say("multiwall-sheets", "A multiwall polycarbonate sheet", """
+            A multiwall polycarbonate sheet is a material of this package
+            (materials/lexan-thermoclear-lt2uv62rs13-opal: its ribs run along its length and are set vertical).
+            A part cut out of one with a knife links sawn_with tools/knife-on-multiwall-sheet, the sheet
+            makers' way of scoring and breaking it, which takes no cut out and says up to which thickness. No
+            sheet maker allows an angle grinder on multiwall sheet: do not cut one with it.""",
+            "materials/lexan-thermoclear-lt2uv62rs13-opal", "tools/knife-on-multiwall-sheet"),
+    ])
+
+
 def knowledge() -> list[Node]:
     """The branches to merge beside furniture-design's: the sources, the sheets and the knife."""
     return [Node(id=SOURCES, kind="", children=with_authority(sources(), AUTHORITY)),
             Node(id=MATERIALS, kind="", children=[lexan_thermoclear_6()]),
-            Node(id=TOOLS, kind="", children=[knife()])]
+            Node(id=TOOLS, kind="", children=[knife()]), guidance()]
